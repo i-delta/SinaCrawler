@@ -1,5 +1,5 @@
 #!/usr/bin/python2.7
-# -*- coding:utf-8 -*-
+## -*- coding:utf-8 -*-
 from sdk.weibo import APIClient
 import urllib, os, sys
 import webbrowser
@@ -65,7 +65,7 @@ client.set_access_token(access_token, expires_in)
 uid=5285991999
 
 friendId = []
-
+ul = client.friendships.friends.ids.get(uid = 5285991999)
 friendId.append(uid)
 
 db = open('friend.txt', 'w')
